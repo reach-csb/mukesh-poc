@@ -1,0 +1,42 @@
+{
+    "address": 
+        {
+            "title": "ADDRESS (4)",
+            "type": [
+                {
+                    "atype": "Home",
+                    "address": "24/6, Mercy Flats, Indira Nagar, 4th Main Road, Adyar, Chennai, Tamil Nadu, 600020"
+                }
+            ]
+        }
+    ,
+    "estimate": {
+        "title": "DELIVERY ESTIMATES",
+        "items": [
+            {
+                "img": "/assets/img1.jpeg",
+                "title": "Women Solid yellow top ",
+                "delivery": [
+                    {"type":"express","time":"48 Hours Express Delivery (Charges Rs.xxx)", "date":"Aug 3rd 2020"},
+                    {"type":"standard","time":"Standard Delivery", "date":"Aug 5th 2020"}
+                ]
+            },
+            {
+                "img": "/assets/img2.jpeg",
+                "title": "Women Solid yellow top ",
+                "delivery": [
+                    {"type":"express","time":"48 Hours Express Delivery (Charges Rs.xxx)", "date":"Aug 3rd 2020"},
+                    {"type":"standard","time":"Standard Delivery", "date":"Aug 5th 2020"}
+                ]
+            },
+            {
+                "img": "/assets/img2.jpeg",
+                "title": "Women Solid yellow top ",
+                "delivery": [
+                    {"type":"express","time":"48 Hours Express Delivery (Charges Rs.xxx)", "date":"Aug 3rd 2020"},
+                    {"type":"standard","time":"Standard Delivery", "date":"Aug 5th 2020"}
+                ]
+            }
+        ]
+    }
+}

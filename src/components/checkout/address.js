@@ -8,52 +8,27 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles((theme)=>({
-  root: {
-   //
-  },
-  addressTitle:{
-    fontWeight:400,
-    fontSize: '0.8em',
-  },
-  cardCls:{
-    boxShadow: '-20px -19px 11px -20px rgba(0,0,0,0.2),0px 0px 0px 0px rgba(0,0,0,0.14),0px 0px 1px 0px rgba(0,0,0,0.12)'
- },
-  addressText:{
-    fontWeight:100,
-    fontSize:'0.9em',
-    paddingTop: '0.5em',
+const useStyles = makeStyles((theme) => ({
+  addressText: {
+    fontWeight: 100,
+    fontSize: '0.9em',
     color: '#000000'
   },
 }));
 
-const Address = ()=>  {
+const Address = ({address}) => {
+  // console.log('address',address);
+  address.map(ad=>{console.log(ad.atype)})
   const classes = useStyles();
-
   return (
     <div>
-    <Card className={classes.cardCls}>
-      <CardActionArea >
-        <CardMedia
-          className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="p" component="h2" align="left" className={classes.addressTitle}>
-            ADDRESS (4)
-          </Typography>
+      {
+        address.map(ad=>(
           <Typography variant="p"  component="p" align="left" className={classes.addressText}>
-            <b>Home :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24/6, Mercy Flats, Indira Nagar, 4th Main Road, Adyar, Chennai, Tamil Nadu, 600020
-         </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    <CardMedia
-        className={classes.cover}
-        image="/static/images/cards/live-from-space.jpg"
-        title="Live from space album cover"
-      />
+            {ad.atype}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ad.address}
+         </Typography> 
+        ))
+      }
     </div>
   );
 }

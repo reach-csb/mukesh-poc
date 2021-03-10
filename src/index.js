@@ -8,15 +8,22 @@ import { ThemeProvider } from '@material-ui/styles';
 
 
 const theme = createMuiTheme({
-  palette:{
-    primary:{
+  palette: {
+    primary: {
       main: "#ffffff"
     }
   },
-  typography:{
+  typography: {
     fontFamily: "'Roboto Slab', serif",
     body2: {
       fontFamily: "'Roboto Slab', serif",
+    }
+  },
+  overrides: {
+    MuiFormControlLabel: {
+      label: {
+        fontSize: '0.875rem',
+      }
     }
   }
 })
